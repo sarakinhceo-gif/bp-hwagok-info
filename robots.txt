@@ -7,4 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://shirtsroom.website/sitemap.xml
+Sitemap: https://maphoshirts.xyz/sitemap.xml
