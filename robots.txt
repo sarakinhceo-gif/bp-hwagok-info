@@ -8,3 +8,4 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://maphoshirts.xyz/sitemap.xml
+Sitemap: https://maphoshirts.xyz/sitemap-index.xml
