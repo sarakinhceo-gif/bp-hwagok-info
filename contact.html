@@ -1,20 +1,982 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
- <title>마포 홍대 셔츠룸 단체 부킹 | 기업 시간제 전문 예약 — 문의</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="마포와 홍대 셔츠룸 예약 문의는 언제든 환영합니다. 빠르고 친절한 상담, 지도, 운영 시간, 간편한 예약 폼을 통해 편안하게 문의하세요.">
- <meta name="keywords" content="마포 셔츠룸 문의, 홍대 셔츠룸 예약, 단체 부킹 문의, 기업 모임 예약, 셔츠룸 연락처, 마포 홍대 지도">
- <link rel="canonical" href="https://maphoshirts.xyz/contact.html">
- <meta property="og:type" content="website">
- <meta property="og:url" content="https://maphoshirts.xyz/contact.html">
- <meta property="og:title" content="마포 홍대 셔츠룸 단체 부킹 | 기업 시간제 전문 예약 — 문의">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마포 홍대 셔츠룸 단체 부킹 | 기업 시간제 전문 예약 — 문의</title>
+  <meta name="description" content="마포와 홍대 셔츠룸 예약 문의는 언제든 환영합니다. 빠르고 친절한 상담, 지도, 운영 시간, 간편한 예약 폼을 통해 편안하게 문의하세요.">
+  <link rel="canonical" href="https://maphoshirts.xyz/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maphoshirts.xyz/contact.html">
+  <meta property="og:title" content="마포 홍대 셔츠룸 단체 부킹 | 기업 시간제 전문 예약 — 문의">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --cream: #f9f4ec;
+ --cream-dark: #f0e9dc;
+ --vellum: #e8dece;
+ --ink: #1c1108;
+ --ink-mid: rgba(28, 17, 8, 0.55);
+ --ink-faint: rgba(28, 17, 8, 0.28);
+ --burgundy: #6b1a1a;
+ --burgundy-pale: rgba(107, 26, 26, 0.06);
+ --gold: #9a7a3a;
+ --gold-pale: rgba(154, 122, 58, 0.1);
+ --rule: rgba(28, 17, 8, 0.14);
+ --serif: 'Noto Serif KR', 'Playfair Display', serif;
+ --display: 'Playfair Display', 'Noto Serif KR', serif;
+ --italic: 'Cormorant Garamond', 'Playfair Display', serif;
+ --sans: 'Pretendard', sans-serif;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ html { scroll-behavior: smooth; }
+
+ body {
+ background: var(--cream);
+ color: var(--ink);
+ font-family: var(--serif);
+ line-height: 1.85;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ /* 수평 장식 */
+ .ornament {
+ text-align: center;
+ color: var(--gold);
+ font-size: 1rem;
+ letter-spacing: 0.5em;
+ padding: 8px 0;
+ }
+
+ .dbl-rule {
+ border: none;
+ border-top: 1px solid var(--rule);
+ position: relative;
+ }
+ .dbl-rule::after {
+ content: '';
+ display: block;
+ border-top: 1px solid var(--rule);
+ margin-top: 4px;
+ }
+
+ .thin-rule { border: none; border-top: 1px solid var(--rule); }
+
+ .wrap { max-width: 1020px; margin: 0 auto; padding: 0 48px; }
+ .wrap-narrow { max-width: 720px; margin: 0 auto; padding: 0 48px; }
+
+ /* ── 헤더 ── */
+ header {
+ background: var(--ink);
+ color: var(--cream);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 72px;
+ }
+
+ .brand-mark {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ text-decoration: none;
+ }
+
+ .brand-title {
+ font-family: var(--display);
+ font-size: 1.05rem;
+ font-weight: 700;
+ color: var(--cream);
+ letter-spacing: 0.06em;
+ }
+
+ .brand-rule {
+ width: 100%;
+ height: 1px;
+ background: var(--gold);
+ margin: 3px 0;
+ }
+
+ .brand-tag {
+ font-family: var(--sans);
+ font-size: 0.6rem;
+ color: rgba(249, 244, 236, 0.45);
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ }
+
+ nav {
+ display: flex;
+ gap: 32px;
+ align-items: center;
+ }
+
+ nav a {
+ font-family: var(--sans);
+ font-size: 0.78rem;
+ color: rgba(249, 244, 236, 0.65);
+ text-decoration: none;
+ letter-spacing: 0.08em;
+ transition: color 0.2s;
+ }
+
+ nav a:hover { color: var(--cream); }
+
+ .nav-tel {
+ border: 1px solid var(--gold);
+ color: var(--gold) !important;
+ padding: 6px 16px;
+ font-family: var(--sans);
+ font-size: 0.75rem !important;
+ letter-spacing: 0.06em !important;
+ transition: all 0.3s !important;
+ }
+
+ .nav-tel:hover {
+ background: var(--gold) !important;
+ color: var(--ink) !important;
+ }
+
+ /* ── 히어로 — 블랙북 커버 ── */
+ .hero {
+ background: var(--ink);
+ color: var(--cream);
+ padding: 0;
+ position: relative;
+ overflow: hidden;
+ }
+
+ /* 배경 패턴 — CSS로만 */
+ .hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-image:
+ repeating-linear-gradient(
+ 0deg,
+ transparent,
+ transparent 47px,
+ rgba(249, 244, 236, 0.025) 47px,
+ rgba(249, 244, 236, 0.025) 48px
+ ),
+ repeating-linear-gradient(
+ 90deg,
+ transparent,
+ transparent 95px,
+ rgba(249, 244, 236, 0.025) 95px,
+ rgba(249, 244, 236, 0.025) 96px
+ );
+ pointer-events: none;
+ }
+
+ .hero-inner {
+ position: relative;
+ z-index: 1;
+ padding: 100px 48px 80px;
+ max-width: 1020px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 320px;
+ gap: 80px;
+ align-items: start;
+ }
+
+ .hero-left {}
+
+ .hero-vol {
+ font-family: var(--sans);
+ font-size: 0.65rem;
+ letter-spacing: 0.25em;
+ color: var(--gold);
+ text-transform: uppercase;
+ margin-bottom: 24px;
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ }
+
+ .hero-vol::before, .hero-vol::after {
+ content: '';
+ flex: 1;
+ max-width: 40px;
+ height: 1px;
+ background: var(--gold);
+ opacity: 0.5;
+ }
+
+ .hero h1 {
+ font-family: var(--display);
+ font-size: clamp(2.4rem, 5vw, 4rem);
+ font-weight: 900;
+ line-height: 1.1;
+ letter-spacing: -0.02em;
+ color: var(--cream);
+ margin-bottom: 8px;
+ }
+
+ .hero h1 em {
+ display: block;
+ font-style: italic;
+ font-weight: 400;
+ font-size: 0.7em;
+ color: var(--gold);
+ letter-spacing: 0.02em;
+ margin-top: 8px;
+ }
+
+ .hero-desc {
+ margin-top: 32px;
+ font-size: 0.95rem;
+ color: rgba(249, 244, 236, 0.6);
+ line-height: 1.9;
+ font-weight: 300;
+ max-width: 480px;
+ }
+
+ .hero-cta {
+ margin-top: 40px;
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ }
+
+ .btn-gold {
+ background: var(--gold);
+ color: var(--ink);
+ text-decoration: none;
+ padding: 14px 32px;
+ font-family: var(--sans);
+ font-size: 0.8rem;
+ font-weight: 600;
+ letter-spacing: 0.14em;
+ text-transform: uppercase;
+ transition: all 0.3s;
+ display: inline-block;
+ }
+
+ .btn-gold:hover { background: var(--cream); }
+
+ .btn-ghost {
+ color: rgba(249, 244, 236, 0.7);
+ text-decoration: none;
+ font-family: var(--sans);
+ font-size: 0.8rem;
+ border-bottom: 1px solid rgba(154, 122, 58, 0.5);
+ padding-bottom: 2px;
+ transition: all 0.2s;
+ }
+
+ .btn-ghost:hover { color: var(--cream); border-bottom-color: var(--gold); }
+
+ /* 블랙북 카드 */
+ .blackbook-card {
+ border: 1px solid rgba(154, 122, 58, 0.35);
+ padding: 40px 32px;
+ position: relative;
+ }
+
+ .blackbook-card::before {
+ content: '';
+ position: absolute;
+ inset: 6px;
+ border: 1px solid rgba(154, 122, 58, 0.1);
+ pointer-events: none;
+ }
+
+ .card-category {
+ font-family: var(--sans);
+ font-size: 0.6rem;
+ letter-spacing: 0.22em;
+ color: var(--gold);
+ text-transform: uppercase;
+ margin-bottom: 20px;
+ }
+
+ .card-stat {
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ padding: 10px 0;
+ border-bottom: 1px solid rgba(249, 244, 236, 0.06);
+ }
+
+ .card-stat:last-child { border-bottom: none; }
+
+ .card-stat-key {
+ font-family: var(--sans);
+ font-size: 0.75rem;
+ color: rgba(249, 244, 236, 0.45);
+ }
+
+ .card-stat-val {
+ font-family: var(--display);
+ font-size: 0.88rem;
+ color: var(--cream);
+ font-style: italic;
+ }
+
+ /* ── 서비스 섹션 ── */
+ .services-section {
+ padding: 96px 0;
+ border-bottom: 1px solid var(--rule);
+ }
+
+ .section-cap {
+ font-family: var(--sans);
+ font-size: 0.62rem;
+ letter-spacing: 0.22em;
+ text-transform: uppercase;
+ color: var(--gold);
+ margin-bottom: 12px;
+ }
+
+ .section-h {
+ font-family: var(--display);
+ font-size: clamp(1.8rem, 3vw, 2.6rem);
+ font-weight: 700;
+ line-height: 1.2;
+ letter-spacing: -0.02em;
+ margin-bottom: 16px;
+ }
+
+ .section-intro {
+ font-family: var(--italic);
+ font-size: 1.05rem;
+ color: var(--ink-mid);
+ line-height: 1.85;
+ max-width: 560px;
+ }
+
+ .services-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 1px;
+ background: var(--rule);
+ margin-top: 56px;
+ border: 1px solid var(--rule);
+ }
+
+ .service-tile {
+ background: var(--cream);
+ padding: 44px 36px;
+ transition: background 0.3s;
+ }
+
+ .service-tile:hover { background: var(--cream-dark); }
+
+ .tile-num {
+ font-family: var(--display);
+ font-size: 3rem;
+ font-weight: 900;
+ color: rgba(28, 17, 8, 0.06);
+ line-height: 1;
+ margin-bottom: 16px;
+ font-style: italic;
+ }
+
+ .tile-title {
+ font-family: var(--serif);
+ font-size: 1.05rem;
+ font-weight: 700;
+ margin-bottom: 12px;
+ letter-spacing: -0.01em;
+ }
+
+ .tile-desc {
+ font-family: var(--sans);
+ font-size: 0.83rem;
+ color: var(--ink-mid);
+ line-height: 1.7;
+ font-weight: 300;
+ }
+
+ /* ── 예약 프로세스 ── */
+ .process-section {
+ padding: 96px 0;
+ background: var(--cream-dark);
+ border-top: 1px solid var(--rule);
+ border-bottom: 1px solid var(--rule);
+ }
+
+ .process-timeline {
+ margin-top: 56px;
+ position: relative;
+ }
+
+ .process-timeline::before {
+ content: '';
+ position: absolute;
+ left: 40px;
+ top: 24px;
+ bottom: 24px;
+ width: 1px;
+ background: var(--rule);
+ }
+
+ .process-step {
+ display: grid;
+ grid-template-columns: 80px 1fr;
+ gap: 32px;
+ margin-bottom: 40px;
+ align-items: start;
+ }
+
+ .process-step:last-child { margin-bottom: 0; }
+
+ .step-marker {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 4px;
+ }
+
+ .step-num {
+ width: 40px;
+ height: 40px;
+ border: 1px solid var(--ink);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--display);
+ font-size: 0.88rem;
+ font-style: italic;
+ color: var(--ink);
+ background: var(--cream-dark);
+ position: relative;
+ z-index: 1;
+ flex-shrink: 0;
+ }
+
+ .step-body {}
+
+ .step-title {
+ font-family: var(--serif);
+ font-size: 1rem;
+ font-weight: 700;
+ margin-bottom: 8px;
+ }
+
+ .step-desc {
+ font-family: var(--sans);
+ font-size: 0.83rem;
+ color: var(--ink-mid);
+ line-height: 1.7;
+ font-weight: 300;
+ }
+
+ /* ── 가격 섹션 ── */
+ .price-section {
+ padding: 96px 0;
+ border-bottom: 1px solid var(--rule);
+ }
+
+ .price-cards {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 24px;
+ margin-top: 56px;
+ }
+
+ .price-card {
+ border: 1px solid var(--rule);
+ padding: 40px 32px;
+ position: relative;
+ transition: all 0.3s;
+ }
+
+ .price-card:hover {
+ border-color: var(--gold);
+ box-shadow: 0 4px 24px rgba(28, 17, 8, 0.06);
+ }
+
+ .price-card.featured {
+ background: var(--ink);
+ color: var(--cream);
+ border-color: var(--gold);
+ }
+
+ .price-card-tag {
+ font-family: var(--sans);
+ font-size: 0.6rem;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ color: var(--gold);
+ margin-bottom: 16px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+
+ .price-card-tag::after {
+ content: '';
+ flex: 1;
+ height: 1px;
+ background: rgba(154, 122, 58, 0.25);
+ }
+
+ .price-card-name {
+ font-family: var(--display);
+ font-size: 1.4rem;
+ font-weight: 700;
+ letter-spacing: -0.01em;
+ margin-bottom: 8px;
+ }
+
+ .price-card.featured .price-card-name { color: var(--cream); }
+
+ .price-val {
+ font-family: var(--display);
+ font-size: 2.8rem;
+ font-weight: 900;
+ color: var(--burgundy);
+ line-height: 1;
+ margin-bottom: 4px;
+ }
+
+ .price-card.featured .price-val { color: var(--gold); }
+
+ .price-basis {
+ font-family: var(--sans);
+ font-size: 0.72rem;
+ color: var(--ink-faint);
+ margin-bottom: 28px;
+ }
+
+ .price-card.featured .price-basis { color: rgba(249, 244, 236, 0.4); }
+
+ .price-divider {
+ height: 1px;
+ background: var(--rule);
+ margin-bottom: 24px;
+ }
+
+ .price-card.featured .price-divider { background: rgba(249, 244, 236, 0.1); }
+
+ .price-features { list-style: none; }
+
+ .price-features li {
+ font-family: var(--sans);
+ font-size: 0.82rem;
+ color: var(--ink-mid);
+ padding: 7px 0;
+ border-bottom: 1px solid rgba(28, 17, 8, 0.05);
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }
+
+ .price-card.featured .price-features li {
+ color: rgba(249, 244, 236, 0.65);
+ border-bottom-color: rgba(249, 244, 236, 0.05);
+ }
+
+ .price-features li::before {
+ content: '—';
+ color: var(--gold);
+ font-size: 0.7rem;
+ flex-shrink: 0;
+ }
+
+ /* ── 후기 ── */
+ .reviews-section {
+ padding: 96px 0;
+ background: var(--vellum);
+ border-top: 1px solid var(--rule);
+ border-bottom: 1px solid var(--rule);
+ }
+
+ .reviews-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 32px;
+ margin-top: 56px;
+ }
+
+ .review-card {
+ background: var(--cream);
+ border: 1px solid rgba(28, 17, 8, 0.08);
+ padding: 36px 32px;
+ }
+
+ .review-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid var(--rule);
+ }
+
+ .reviewer-info {}
+
+ .reviewer-name {
+ font-family: var(--sans);
+ font-size: 0.75rem;
+ font-weight: 600;
+ letter-spacing: 0.08em;
+ color: var(--ink);
+ text-transform: uppercase;
+ }
+
+ .reviewer-type {
+ font-family: var(--sans);
+ font-size: 0.65rem;
+ color: var(--ink-faint);
+ margin-top: 3px;
+ }
+
+ .review-rating {
+ font-family: var(--sans);
+ font-size: 0.7rem;
+ color: var(--gold);
+ letter-spacing: 3px;
+ }
+
+ .review-quote {
+ font-family: var(--italic);
+ font-size: 0.98rem;
+ line-height: 1.8;
+ color: var(--ink);
+ font-style: italic;
+ }
+
+ .review-quote strong {
+ font-style: normal;
+ font-family: var(--serif);
+ font-weight: 700;
+ }
+
+ .review-footer {
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .review-date {
+ font-family: var(--sans);
+ font-size: 0.65rem;
+ color: var(--ink-faint);
+ }
+
+ .review-tag {
+ font-family: var(--sans);
+ font-size: 0.6rem;
+ letter-spacing: 0.1em;
+ border: 1px solid var(--rule);
+ padding: 3px 10px;
+ color: var(--ink-mid);
+ }
+
+ /* ── 내러티브 섹션 ── */
+ .narrative-section {
+ padding: 96px 0;
+ border-bottom: 1px solid var(--rule);
+ }
+
+ .narrative-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 80px;
+ align-items: start;
+ }
+
+ .drop-cap::first-letter {
+ float: left;
+ font-family: var(--display);
+ font-size: 4.5rem;
+ line-height: 0.75;
+ padding-top: 6px;
+ padding-right: 12px;
+ color: var(--burgundy);
+ font-weight: 900;
+ }
+
+ .narrative-text {
+ font-size: 0.92rem;
+ color: var(--ink);
+ line-height: 1.9;
+ font-weight: 300;
+ text-align: justify;
+ }
+
+ .narrative-text p { margin-bottom: 1.4em; }
+ .narrative-text p:last-child { margin-bottom: 0; }
+
+ .pull-quote {
+ border-left: 3px solid var(--burgundy);
+ padding: 20px 24px;
+ background: var(--burgundy-pale);
+ margin: 32px 0;
+ }
+
+ .pull-quote p {
+ font-family: var(--display);
+ font-size: 1.2rem;
+ font-style: italic;
+ line-height: 1.6;
+ color: var(--burgundy);
+ font-weight: 600;
+ }
+
+ .narrative-aside {}
+
+ .aside-box {
+ border: 1px solid var(--rule);
+ padding: 32px;
+ margin-bottom: 24px;
+ background: var(--cream-dark);
+ }
+
+ .aside-label {
+ font-family: var(--sans);
+ font-size: 0.6rem;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ color: var(--gold);
+ margin-bottom: 16px;
+ }
+
+ .aside-list { list-style: none; }
+
+ .aside-list li {
+ font-family: var(--sans);
+ font-size: 0.82rem;
+ color: var(--ink-mid);
+ padding: 8px 0;
+ border-bottom: 1px solid var(--rule);
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ }
+
+ .aside-list li:last-child { border-bottom: none; }
+
+ .aside-list li::before {
+ content: '◆';
+ font-size: 0.45rem;
+ color: var(--burgundy);
+ flex-shrink: 0;
+ }
+
+ /* ── CTA ── */
+ .cta-section {
+ background: var(--ink);
+ padding: 96px 0;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .cta-section::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background-image:
+ repeating-linear-gradient(
+ 45deg,
+ transparent,
+ transparent 49px,
+ rgba(249, 244, 236, 0.015) 49px,
+ rgba(249, 244, 236, 0.015) 50px
+ );
+ pointer-events: none;
+ }
+
+ .cta-inner {
+ position: relative;
+ z-index: 1;
+ max-width: 700px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .cta-ornament {
+ font-family: var(--display);
+ font-style: italic;
+ font-size: 0.75rem;
+ letter-spacing: 0.2em;
+ color: rgba(154, 122, 58, 0.6);
+ margin-bottom: 32px;
+ }
+
+ .cta-h {
+ font-family: var(--display);
+ font-size: clamp(1.8rem, 3vw, 2.8rem);
+ font-weight: 900;
+ color: var(--cream);
+ line-height: 1.2;
+ letter-spacing: -0.02em;
+ margin-bottom: 20px;
+ }
+
+ .cta-sub {
+ font-family: var(--sans);
+ font-size: 0.85rem;
+ color: rgba(249, 244, 236, 0.5);
+ line-height: 1.7;
+ margin-bottom: 48px;
+ font-weight: 300;
+ }
+
+ .cta-tel {
+ font-family: var(--display);
+ font-size: 3.2rem;
+ font-weight: 900;
+ color: var(--gold);
+ text-decoration: none;
+ letter-spacing: 0.04em;
+ display: inline-block;
+ transition: color 0.2s;
+ }
+
+ .cta-tel:hover { color: var(--cream); }
+
+ .cta-hours {
+ font-family: var(--sans);
+ font-size: 0.65rem;
+ letter-spacing: 0.16em;
+ color: rgba(249, 244, 236, 0.3);
+ text-transform: uppercase;
+ margin-top: 12px;
+ }
+
+ /* ── 푸터 ── */
+ footer {
+ background: var(--ink);
+ border-top: 1px solid rgba(154, 122, 58, 0.2);
+ padding: 64px 0 36px;
+ color: rgba(249, 244, 236, 0.45);
+ }
+
+ .footer-top {
+ display: grid;
+ grid-template-columns: 2fr 1fr 1fr;
+ gap: 60px;
+ margin-bottom: 48px;
+ }
+
+ .footer-brand-name {
+ font-family: var(--display);
+ font-size: 1.1rem;
+ font-style: italic;
+ color: var(--cream);
+ margin-bottom: 16px;
+ }
+
+ .footer-brand-desc {
+ font-family: var(--sans);
+ font-size: 0.78rem;
+ line-height: 1.75;
+ color: rgba(249, 244, 236, 0.38);
+ font-weight: 300;
+ max-width: 320px;
+ }
+
+ .footer-col-head {
+ font-family: var(--sans);
+ font-size: 0.58rem;
+ letter-spacing: 0.22em;
+ text-transform: uppercase;
+ color: var(--gold);
+ margin-bottom: 20px;
+ }
+
+ .footer-links { list-style: none; }
+ .footer-links li { margin-bottom: 10px; }
+ .footer-links a {
+ font-family: var(--sans);
+ font-size: 0.78rem;
+ color: rgba(249, 244, 236, 0.38);
+ text-decoration: none;
+ transition: color 0.2s;
+ }
+ .footer-links a:hover { color: var(--cream); }
+
+ .footer-contact-line {
+ font-family: var(--sans);
+ font-size: 0.78rem;
+ color: rgba(249, 244, 236, 0.38);
+ margin-bottom: 8px;
+ }
+
+ .footer-bottom {
+ border-top: 1px solid rgba(249, 244, 236, 0.06);
+ padding-top: 28px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .footer-copy {
+ font-family: var(--sans);
+ font-size: 0.62rem;
+ letter-spacing: 0.08em;
+ }
+
+ .footer-note {
+ font-family: var(--sans);
+ font-size: 0.65rem;
+ max-width: 420px;
+ text-align: right;
+ line-height: 1.6;
+ }
+
+ /* ── 반응형 ── */
+ @media (max-width: 900px) {
+ .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+ .services-grid { grid-template-columns: 1fr; }
+ .price-cards { grid-template-columns: 1fr; max-width: 400px; }
+ .reviews-grid { grid-template-columns: 1fr; }
+ .narrative-grid { grid-template-columns: 1fr; gap: 48px; }
+ .footer-top { grid-template-columns: 1fr; gap: 36px; }
+ }
+
+ @media (max-width: 768px) {
+ nav { display: none; }
+ .wrap { padding: 0 24px; }
+ .wrap-narrow { padding: 0 24px; }
+ .hero-inner { padding: 64px 24px 56px; }
+ .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+ .footer-note { text-align: center; }
+ }
+
+ @media (max-width: 480px) {
+ .price-cards { max-width: none; }
+ }
+ </style>
   <meta property="og:description" content="마포와 홍대 셔츠룸 예약 문의는 언제든 환영합니다. 빠르고 친절한 상담, 지도, 운영 시간, 간편한 예약 폼을 통해 편안하게 문의하세요.">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
- <header class="nav-present">
+  <div class="container">
+    <header>
+ <div class="wrap">
+ <div class="header-inner">
+ <a href="/" class="brand-mark">
+ <span class="brand-title">Shirtsroom Concierge</span>
+ <span class="brand-rule"></span>
+ <span class="brand-tag">Mapo · Hongdae · Private Booking</span>
+ </a>
+ <nav>
+ <a href="#services">서비스</a>
+ <a href="#process">예약 안내</a>
+ <a href="#price">가격</a>
+ <a href="#reviews">후기</a>
+ <a href="tel:01057243819" class="nav-tel">010-5724-3819</a>
+ </nav>
+ </div>
+ </div>
+</header>
+    <main>
+<header class="nav-present">
  <nav>
  <div class="hamburger-menu">
  
@@ -126,5 +1088,7 @@
  <p>&copy; 2023 마포 홍대 셔츠룸. 모든 권리 보유.</p>
  </div>
  </footer>
+    </main>
+  </div>
 </body>
 </html>
