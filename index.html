@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>마포·홍대 단체 방문 준비표 | 인원·시간·비용 확인</title>
-  <meta name="description" content="단체 방문 문의 전에 인원, 이동, 시간, 비용 조건을 정리하고 확인할 질문을 만드는 마포·홍대 방문 준비표입니다.">
+  <title>마포·홍대 셔츠룸 단체 모임 브리프 | 인원·예산·귀가 정리</title>
+  <meta name="description" content="마포·홍대 셔츠룸 단체 모임을 잡는 사람이 인원 변동, 종료 시간, 총예산과 귀가 동선을 한 장으로 정리하고 같은 조건으로 문의하도록 돕습니다.">
   <link rel="canonical" href="https://maphoshirts.xyz/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"마포·홍대 단체 방문 준비표","url":"https://maphoshirts.xyz/","inLanguage":"ko","description":"인원·시간·이동·비용 확인 항목을 정리하는 단체 방문 준비표"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"마포·홍대 셔츠룸 단체 모임 브리프","url":"https://maphoshirts.xyz/","inLanguage":"ko","description":"인원 변동, 시간, 총예산과 귀가 동선을 정리하는 성인 단체 모임 브리프"}</script>
   <style>
     :root { color-scheme: light; font-family: system-ui, -apple-system, 'Malgun Gothic', sans-serif; background: #f7f5ef; color: #182522; }
     * { box-sizing: border-box; }
@@ -18,9 +18,20 @@
     main { padding: 2.5rem 0 4rem; }
     section { margin-top: 2rem; }
     .eyebrow { color: #265e55; font-size: .85rem; font-weight: 800; letter-spacing: .08em; }
-    h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.2; margin: .5rem 0 1rem; }
+    h1 { font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.2; margin: .5rem 0 1rem; }
     h2 { font-size: 1.55rem; line-height: 1.35; }
     .lede { font-size: 1.1rem; max-width: 64ch; }
+    .editorial { padding: 1rem .25rem .25rem; }
+    .editorial-intro { max-width: 68ch; font-size: 1.08rem; }
+    .decision-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 1.7rem; margin-top: 1rem; }
+    .decision-list article { border-top: 2px solid #c59c75; padding-top: .8rem; }
+    .decision-list h3 { font-size: 1.15rem; line-height: 1.35; margin: .15rem 0 .5rem; }
+    .decision-list p { margin: .5rem 0; }
+    .decision-list .step { color: #855438; font-size: .82rem; font-weight: 800; letter-spacing: .08em; }
+    .decision-list .memo { color: #534834; font-size: .95rem; }
+    .example-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .example-grid article { padding: 1.2rem; border-radius: 14px; background: #f1ebe2; }
+    .example-grid h3 { margin: 0 0 .5rem; font-size: 1.08rem; }
     .hero { display: grid; grid-template-columns: .95fr 1.05fr; gap: 1.5rem; align-items: center; padding: clamp(1.2rem, 3vw, 2rem); border-radius: 22px; color: #fff; background: linear-gradient(135deg, #20171d 5%, #472238 70%, #63393a); overflow: hidden; }
     .hero .eyebrow { color: #ffd7a8; }
     .hero .lede { color: #f5e9e7; }
@@ -31,6 +42,8 @@
     .hero-frame img:nth-child(2) { animation-delay: -10s; object-position: 62% center; }
     .hero-frame img:nth-child(3) { animation-delay: -5s; }
     .hero-frame.is-paused img, .hero-frame:hover img { animation-play-state: paused; }
+    .hero-call { position: absolute; right: .8rem; bottom: .8rem; z-index: 2; display: inline-flex; align-items: center; padding: .55rem .8rem; border: 1px solid #ffe3b1; border-radius: 999px; color: #fff; background: #21131cdd; font-size: .95rem; font-weight: 800; letter-spacing: .02em; text-decoration: none; box-shadow: 0 4px 18px #0007; }
+    .hero-call:hover, .hero-call:focus-visible { background: #54233a; outline: 2px solid #ffe3b1; outline-offset: 2px; }
     .hero figcaption { margin-top: .45rem; color: #e9d9d9; font-size: .85rem; }
     .motion-toggle { margin-top: .4rem; padding: .35rem .65rem; border: 1px solid #dab9a9; color: #f9e8de; background: transparent; font-size: .78rem; }
     .motion-toggle:hover { background: #ffffff20; }
@@ -52,48 +65,65 @@
     th { width: 27%; }
     footer { border-top: 1px solid #d9dfd9; padding: 1.5rem 0 3rem; color: #52635e; }
     @media (prefers-reduced-motion: reduce) { .hero-frame img { animation: none; opacity: 0; transform: none; } .hero-frame img:first-child { opacity: 1; } .motion-toggle { display: none; } }
-    @media (max-width: 640px) { .grid, .hero, .visual-grid { grid-template-columns: 1fr; } .hero-frame { height: 330px; } .visual-grid img { height: 370px; } header { align-items: flex-start; flex-direction: column; } th { width: 35%; } }
+    @media (max-width: 640px) { .grid, .hero, .visual-grid, .decision-list, .example-grid { grid-template-columns: 1fr; } .hero-frame { height: 330px; } .visual-grid img { height: 370px; } header { align-items: flex-start; flex-direction: column; } th { width: 35%; } }
   </style>
   <meta property="og:url" content="https://maphoshirts.xyz/">
-  <meta property="og:title" content="마포·홍대 단체 방문 준비표 | 인원·시간·비용 확인">
-  <meta property="og:description" content="단체 방문 문의 전에 인원, 이동, 시간, 비용 조건을 정리하고 확인할 질문을 만드는 마포·홍대 방문 준비표입니다.">
+  <meta property="og:title" content="마포·홍대 셔츠룸 단체 모임 브리프 | 인원·예산·귀가 정리">
+  <meta property="og:description" content="마포·홍대 셔츠룸 단체 모임을 잡는 사람이 인원 변동, 종료 시간, 총예산과 귀가 동선을 한 장으로 정리하고 같은 조건으로 문의하도록 돕습니다.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 <header>
-  <a href="/">마포·홍대 단체 방문 준비표</a>
-  <nav aria-label="페이지 이동"><a href="#prepare">준비표</a><a href="#compare">비교 기준</a><a href="#questions">문의 질문</a></nav>
+  <a href="/">마포·홍대 셔츠룸 모임 브리프</a>
+  <nav aria-label="페이지 이동"><a href="#decision">결정 순서</a><a href="#prepare">모임 정리</a><a href="#questions">전화 질문</a></nav>
 </header>
 <main>
   <div class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">예약 전 판단 도구</p>
-      <h1>단체 문의 전에 조건부터 정리하세요</h1>
-      <p class="lede">여러 사람이 함께 움직일 때는 장소 이름보다 인원, 이동, 종료 시간, 총비용의 범위를 먼저 맞추는 편이 실용적입니다. 아래 준비표는 그 조건을 정리하는 용도이며 예약이나 가격 확정을 대신하지 않습니다.</p>
+      <p class="eyebrow">마포·합정·홍대 셔츠룸 단체 모임</p>
+      <h1>모임은 여럿이,<br>결정은 한 사람이</h1>
+      <p class="lede">일곱 명 약속에 두 명이 늦을 수도 있다면, 장소보다 먼저 적을 게 있습니다. 확정 인원, 끝나는 시각, 총예산, 그리고 각자의 귀갓길. 같은 조건으로 문의할 수 있게 이 페이지에서 한 장으로 정리하세요.</p>
     </div>
     <figure>
-      <div class="hero-frame" role="img" aria-label="금빛 조명과 여름 라운지에서 미소 짓는 가상 성인 여성들의 연출 이미지가 차례로 나타납니다">
+      <div class="hero-frame">
         <img src="/assets/golden-evening-portrait.webp" width="760" height="1140" fetchpriority="high" alt="">
         <img src="/assets/summer-host-hero.webp" width="1440" height="960" alt="">
         <img src="/assets/lilac-evening-portrait.webp" width="760" height="1140" alt="">
+        <a class="hero-call" href="tel:01062790862" aria-label="010-6279-0862로 전화하기">전화 010-6279-0862</a>
       </div>
       <figcaption>가상 인물로 제작한 분위기 연출 이미지</figcaption>
       <button class="motion-toggle" id="toggle-hero-motion" type="button" aria-pressed="false">움직임 일시정지</button>
     </figure>
   </div>
 
+  <section id="decision" class="editorial" aria-labelledby="decision-title">
+    <h2 id="decision-title">전화보다 먼저 정할 네 가지</h2>
+    <p class="editorial-intro">장소 이름부터 검색하면 각기 다른 조건의 견적을 비교하게 됩니다. 아래 네 가지를 먼저 정하고 같은 질문을 반복하면 빠진 비용과 동선이 보입니다.</p>
+    <div class="decision-list">
+      <article><span class="step">01 · 인원</span><h3>한 숫자 대신, 확정과 유동으로</h3><p>“7명”이라고만 적지 마세요. 이미 답한 사람 5명과 아직 답 없는 2명을 나누면, 자리 규모를 질문하기도 쉽고 인원 변경 조건도 확인할 수 있습니다.</p><p class="memo">메모: 확정 ○명 · 유동 ○명 · 늦게 합류 ○명</p></article>
+      <article><span class="step">02 · 시간</span><h3>만나는 때보다 끝나는 때</h3><p>식사나 이동이 앞에 있으면 시작 시각만으로 일정이 정해지지 않습니다. 끝나는 시각을 먼저 맞추고, 늦는 사람을 기다릴지 먼저 시작할지 그룹 안에서 결정하세요.</p><p class="memo">메모: 시작 ○시 · 종료 희망 ○시 · 합류 시각 ○시</p></article>
+      <article><span class="step">03 · 돈</span><h3>1인 가격보다 최종 총액</h3><p>기본 금액에 무엇이 포함되는지, 추가 항목과 연장 기준은 무엇인지 같은 질문을 두 곳에 던져야 비교가 됩니다. 받은 견적을 적기 전에는 이 페이지가 가격을 대신 제시하지 않습니다.</p><p class="memo">메모: 총예산 상한 ○원 · 별도 항목 확인 여부</p></article>
+      <article><span class="step">04 · 이동</span><h3>모이는 곳과 흩어지는 곳</h3><p>합정 쪽에서 오는 사람과 홍대 쪽에서 오는 사람이 섞였나요? 만날 지점 하나를 먼저 고르고, 늦게까지 남을 사람의 귀가 방향도 확인하세요. 이동 조건이 다르면 가까운 장소의 기준도 달라집니다.</p><p class="memo">메모: 만나는 지점 ○○ · 귀가 방향 ○○</p></article>
+    </div>
+  </section>
+
   <section id="prepare" class="card" aria-labelledby="prepare-title">
-    <h2 id="prepare-title">단체 방문 준비표</h2>
-    <p class="note">입력한 내용은 이 브라우저 화면에서만 사용하며 서버로 전송하지 않습니다. 민감한 개인정보는 입력하지 마세요.</p>
+    <h2 id="prepare-title">전화 앞에 놓을 모임 한 장</h2>
+    <p>답을 기다리는 사람과 예산 상한을 따로 적어보세요. 같은 내용을 여러 곳에 전달하면 조건이 다른 답변을 억지로 비교할 일이 줄어듭니다.</p>
+    <p class="note">입력값은 이 브라우저 화면에서만 사용합니다. 서버로 전송하거나 저장하지 않으니 민감한 개인정보는 적지 마세요.</p>
     <div class="grid">
-      <label>예상 인원<input id="people" type="number" min="1" max="100" inputmode="numeric" placeholder="예: 6"></label>
+      <label>확정 인원<input id="people" type="number" min="1" max="100" inputmode="numeric" placeholder="예: 5"></label>
+      <label>답을 기다리는 인원<input id="waiting" type="number" min="0" max="100" inputmode="numeric" placeholder="예: 2"></label>
+      <label>총예산 상한(원)<input id="budget" type="number" min="0" max="1000000000" step="10000" inputmode="numeric" placeholder="받은 견적이 아니라 우리 모임의 상한"></label>
       <label>방문 희망 시간대<select id="time"><option value="">선택 안 함</option><option>저녁</option><option>늦은 밤</option><option>자정 이후</option></select></label>
       <label>우선 확인할 조건<select id="priority"><option value="">선택 안 함</option><option>전체 비용</option><option>이동 동선</option><option>공간 구성</option><option>종료 시간</option></select></label>
       <label>이동 방식<select id="travel"><option value="">선택 안 함</option><option>대중교통</option><option>차량</option><option>도보</option></select></label>
+      <label>만날 지점<input id="meeting" type="text" maxlength="60" placeholder="예: 합정역 근처"></label>
     </div>
-    <p><button id="make-summary" type="button">문의용 확인 항목 만들기</button></p>
-    <div id="summary" role="status" aria-live="polite">조건을 선택한 뒤 버튼을 누르면 확인할 항목이 여기에 표시됩니다.</div>
+    <p><button id="make-summary" type="button">한 장으로 정리하기</button></p>
+    <div id="summary" role="status" aria-live="polite">조건을 적고 버튼을 누르면 전화에서 읽을 메모가 여기에 만들어집니다.</div>
+    <p class="note">표시되는 1인 금액은 입력한 예산을 사람 수로 나눈 값입니다. 실제 이용료나 견적이 아닙니다.</p>
   </section>
 
   <section aria-labelledby="visual-title">
@@ -105,33 +135,44 @@
     <p class="note">사진은 AI로 제작한 분위기 연출 이미지입니다. 실제 업소나 직원을 나타내지 않습니다.</p>
   </section>
 
+  <section aria-labelledby="example-title">
+    <h2 id="example-title">상황이 바뀌면, 순서도 바뀝니다</h2>
+    <p class="note">아래 두 모임은 실제 방문 후기나 예약 사례가 아니라 결정 순서를 보여주기 위한 가상 예시입니다.</p>
+    <div class="example-grid">
+      <article><h3>7명 중 2명이 늦는다면</h3><p>“7명 확정”으로 문의하지 말고 먼저 시작할 5명과 나중에 합류할 2명을 나눠 적으세요. 시작을 미룰지, 먼저 진행할지를 그룹 안에서 정한 다음 중간 합류가 가능한지 물으면 됩니다.</p><p>총액은 확정 인원만 부담할 때와 전원이 참여할 때를 따로 봐야 합니다. 위 브리프에 5명과 2명을 입력하면 두 경우의 1인 예산 상한을 바로 비교할 수 있습니다.</p></article>
+      <article><h3>회식비 상한이 정해져 있다면</h3><p>장소를 먼저 고른 뒤 예산을 맞추려 하지 마세요. 총액 상한을 먼저 적고, 인원이 줄었을 때 1인 부담이 얼마나 달라지는지 확인하세요. 받은 견적이 상한에 가깝다면 별도 비용과 연장 조건을 먼저 물어야 합니다.</p><p>두 후보에게 같은 인원·같은 시간·같은 질문을 보내세요. 답변 조건이 다르면 저렴해 보이는 숫자만으로 비교할 수 없습니다.</p></article>
+    </div>
+  </section>
+
   <section id="compare" class="card">
-    <h2>장소를 비교할 때 빠뜨리기 쉬운 기준</h2>
+    <h2>두 곳에 똑같이 물어볼 질문</h2>
+    <p>비교표의 왼쪽은 ‘광고 문구’가 아니라 답을 기록할 기준입니다. 답을 듣고 나서 포함·별도·미확인을 구분해 적어두세요.</p>
     <table>
       <tbody>
-        <tr><th scope="row">총비용</th><td>기본 이용 비용에 포함된 항목과 별도 비용, 연장 기준을 구분해 물어보세요. 공개 가격만으로 최종 금액을 단정하지 마세요.</td></tr>
-        <tr><th scope="row">인원과 공간</th><td>예상 인원 전원이 같은 공간을 이용할 수 있는지, 인원 변경 시 조건이 달라지는지 확인하세요.</td></tr>
-        <tr><th scope="row">시간</th><td>시작·종료 가능 시간, 지각이나 일정 변경 시 적용되는 기준을 확인하세요.</td></tr>
-        <tr><th scope="row">이동</th><td>약속 장소에서의 이동 시간, 대중교통 막차, 주차 가능 여부를 각각 확인하세요. 이 페이지는 특정 업소의 주차를 보장하지 않습니다.</td></tr>
-        <tr><th scope="row">변경·취소</th><td>예약 확정 시점과 취소·변경 조건을 문의 전에 기록하세요.</td></tr>
+        <tr><th scope="row">같은 인원</th><td>확정 ○명·유동 ○명으로 문의했을 때 공간 구성과 인원 변경 조건이 어떻게 달라지나요?</td></tr>
+        <tr><th scope="row">같은 시간</th><td>○시 시작, ○시 종료를 기준으로 가능한지와 늦게 합류하는 사람의 조건은 무엇인가요?</td></tr>
+        <tr><th scope="row">같은 총액</th><td>제시한 금액에 포함된 것, 별도 비용, 연장 시 추가되는 항목을 각각 알려주실 수 있나요?</td></tr>
+        <tr><th scope="row">같은 이동</th><td>정확한 위치와 도착 방법은 무엇인가요? 차량 이용자가 있다면 주차 가능 여부는 별도로 확인해야 합니다.</td></tr>
+        <tr><th scope="row">같은 변경 조건</th><td>예약 확정 시점은 언제이며, 인원·시간 변경이나 취소는 언제까지 가능한가요?</td></tr>
       </tbody>
     </table>
+    <p class="note">이 페이지는 어느 후보의 실제 가격·시설·주차·영업시간도 대신 확인해 주지 않습니다. 받은 답변을 같은 기준으로 비교하기 위한 표입니다.</p>
   </section>
 
   <section id="questions" class="card">
-    <h2>문의할 때 한 번에 확인할 질문</h2>
+    <h2>전화에서 읽을 여섯 문장</h2>
     <ol>
-      <li>이 인원과 시간대에 이용 가능한 공간이 있나요?</li>
-      <li>기본 비용에 포함된 것과 별도 비용은 무엇인가요?</li>
-      <li>인원·시간 변경이나 연장 시 조건은 어떻게 바뀌나요?</li>
-      <li>정확한 위치와 이동·주차 안내는 어떻게 받나요?</li>
-      <li>취소 또는 변경은 언제까지 가능한가요?</li>
+      <li>마포·합정·홍대 쪽 셔츠룸 단체 모임을 알아보고 있는데, 확정 ○명과 답을 기다리는 ○명이 있습니다.</li>
+      <li>생각하는 날짜와 시간은 ○일 ○시부터 ○시까지입니다. 이 조건으로 가능한지요?</li>
+      <li>나중에 합류할 사람이 있다면 인원·공간·금액 조건이 어떻게 바뀌나요?</li>
+      <li>총액 기준으로 포함된 항목과 별도 비용, 연장 기준을 나눠 알려주실 수 있나요?</li>
+      <li>정확한 위치와 도착 방법, 차량 이용 시 확인할 점이 있나요?</li>
+      <li>인원 변경·취소 기준을 문자로 다시 받을 수 있나요?</li>
     </ol>
-    <p>이 페이지는 비교와 문의 준비를 돕는 안내입니다. 실제 운영 여부, 가격, 위치, 예약 가능 여부는 선택한 업체에 직접 확인해야 합니다.</p>
-    <p>캠페인에 등록된 문의번호: <a href="tel:01062790862">010-6279-0862</a></p>
+    <p>이 사이트에 등록된 문의번호는 <a href="tel:01062790862">010-6279-0862</a>입니다. 실제 운영 여부·가격·위치·예약 가능 여부는 전화에서 확인하세요.</p>
   </section>
 </main>
-<footer><p>마포·홍대 단체 방문 준비표 · 화면의 안내는 실제 예약 조건을 확정하지 않습니다.</p></footer>
+<footer><p>마포·홍대 셔츠룸 모임 브리프 · 성인 대상 정보이며 예약 조건을 확정하거나 실시간 가격을 표시하지 않습니다.</p></footer>
 <script>
   document.getElementById('toggle-hero-motion').addEventListener('click', event => {
     const frame = document.querySelector('.hero-frame');
@@ -140,16 +181,24 @@
     event.currentTarget.textContent = paused ? '움직임 다시 재생' : '움직임 일시정지';
   });
   document.getElementById('make-summary').addEventListener('click', () => {
-    const people = document.getElementById('people').value.trim();
+    const count = value => Math.min(100, Math.max(0, Number.parseInt(value, 10) || 0));
+    const people = count(document.getElementById('people').value);
+    const waiting = count(document.getElementById('waiting').value);
+    const budget = Math.min(1000000000, Math.max(0, Number.parseInt(document.getElementById('budget').value, 10) || 0));
     const time = document.getElementById('time').value;
     const priority = document.getElementById('priority').value;
     const travel = document.getElementById('travel').value;
+    const meeting = document.getElementById('meeting').value.trim();
+    const perPerson = n => n > 0 && budget > 0 ? `${Math.floor(budget / n).toLocaleString('ko-KR')}원` : '미정';
     const lines = [
-      `예상 인원: ${people ? `${people}명` : '미정'}`,
+      `인원: 확정 ${people ? `${people}명` : '미정'} · 답 대기 ${waiting}명 · 최대 ${people ? `${people + waiting}명` : '미정'}`,
+      `총예산 상한: ${budget ? `${budget.toLocaleString('ko-KR')}원` : '미정'}`,
+      `1인 예산 배분: 확정 인원 기준 ${perPerson(people)} · 전원 참여 기준 ${perPerson(people + waiting)}`,
       `희망 시간대: ${time || '미정'}`,
+      `만날 지점: ${meeting || '미정'}`,
       `우선 조건: ${priority || '미정'}`,
       `이동 방식: ${travel || '미정'}`,
-      '문의 시 확인: 이용 가능 여부, 총비용·별도 비용, 변경·취소 기준, 정확한 위치'
+      '전화에서 질문: 이 인원과 시간에 가능한지, 총액·별도 비용, 중간 합류, 변경·취소, 정확한 위치'
     ];
     document.getElementById('summary').textContent = lines.join('\n');
   });
